@@ -83,6 +83,8 @@ data class InstalledPack(
     val installedAtEpochMs: Long,
     /** True when shipped inside the APK rather than downloaded. */
     val bundled: Boolean = false,
+    /** True when the user imported this file themselves rather than downloading it from a catalog. */
+    val imported: Boolean = false,
 ) {
     fun component(type: ComponentType): InstalledComponent? = components.firstOrNull { it.type == type }
 }

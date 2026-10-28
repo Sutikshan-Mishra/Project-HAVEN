@@ -279,7 +279,11 @@ fun ContactsScreen(back: () -> Unit) {
                     if (i > 0) GroupDivider(inset = 16.dp)
                     ListRow(
                         c.name, subtitle = c.phone,
-                        trailing = if (c.isPrimary) @Composable { Icon(Icons.Rounded.Star, contentDescription = "Primary contact", tint = Haven.colors.accent) } else null,
+                        trailing = if (c.isPrimary) {
+    @Composable {
+        Icon(Icons.Rounded.Star, contentDescription = "Primary contact", tint = Haven.colors.accent)
+    }
+} else null,
                         onClick = { selected = c },
                     )
                 }

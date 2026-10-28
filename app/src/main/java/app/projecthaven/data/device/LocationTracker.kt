@@ -71,7 +71,7 @@ class LocationTracker(private val context: Context) {
     fun lastKnown(): LocationFix? {
         if (!hasPermission() || manager == null) return null
         val candidates = listOf(LocationManager.GPS_PROVIDER, LocationManager.NETWORK_PROVIDER).mapNotNull { p ->
-            runCatching { manager.getLastKnownLocation(p) }.getOrNull()
+            runCatching { manager?.getLastKnownLocation(p) }.getOrNull()
         }
         return candidates.maxByOrNull { it.elapsedRealtimeNanos }?.toFix()
     }

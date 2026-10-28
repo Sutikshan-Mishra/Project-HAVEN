@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 package app.projecthaven.ui.screens.maps
 
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -12,11 +14,13 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.statusBars
 import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.CloudDownload
 import androidx.compose.material.icons.rounded.ContentCopy
+import androidx.compose.material.icons.rounded.FolderOpen
 import androidx.compose.material.icons.rounded.LocalHospital
 import androidx.compose.material.icons.rounded.Map
 import androidx.compose.material.icons.rounded.MyLocation
@@ -46,6 +50,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import app.projecthaven.BuildConfig
 import app.projecthaven.data.maps.BundledMaps
 import app.projecthaven.data.maps.CatalogState
+import app.projecthaven.data.maps.ImportOutcome
 import app.projecthaven.data.maps.MapStyle
 import app.projecthaven.data.maps.OfflineRouting
 import app.projecthaven.data.maps.RegionUi
@@ -113,7 +118,7 @@ fun MapsScreen(go: (String) -> Unit) {
     val packs = rememberInstalledPacks()
     if (packs.none { it.component(ComponentType.TILES) != null }) {
         HavenScreen("Maps") {
-            EmptyState(Icons.Rounded.Map, "No offline maps yet", "Download a region to use maps without internet.", "Get maps", onAction = { go(Routes.DOWNLOADS) })
+            EmptyState(Icons.Rounded.Map, "No offline maps yet", "Download a region, or import your own .pmtiles map, to use maps without internet.", "Get maps", onAction = { go(Routes.DOWNLOADS) })
             ListGroup { ListRow("Manage downloads", icon = Icons.Rounded.CloudDownload, chevron = true, onClick = { go(Routes.DOWNLOADS) }) }
         }
         return
@@ -223,6 +228,24 @@ fun DownloadsScreen(back: () -> Unit, go: (String) -> Unit) {
     val regions by container.maps.regions.collectAsStateWithLifecycle(initialValue = emptyList())
     val bundled = remember(container) { container.bundledMaps.packs }
     var editSource by remember { mutableStateOf(false) }
+    val show = LocalShowMessage.current
+    var importing by remember { mutableStateOf(false) }
+    var importError by remember { mutableStateOf<String?>(null) }
+    val picker = rememberLauncherForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
+        if (uri != null && !importing) {
+            importing = true
+            scope.launch {
+                try {
+                    when (val r = container.mapImporter.import(uri)) {
+                        is ImportOutcome.Done -> { container.places.clear(); show("Added ${r.pack.name}") }
+                        is ImportOutcome.Failed -> importError = r.message
+                    }
+                } finally {
+                    importing = false
+                }
+            }
+        }
+    }
 
     LaunchedEffect(url) { container.catalog.loadCached(url) }
 
@@ -273,6 +296,22 @@ fun DownloadsScreen(back: () -> Unit, go: (String) -> Unit) {
             }
         }
 
+        SectionLabel("Your own maps")
+        ListGroup {
+            ListRow(
+                if (importing) "Importing…" else "Import a map file",
+                subtitle = "Use a .pmtiles map from your phone's storage",
+                icon = Icons.Rounded.FolderOpen,
+                chevron = !importing,
+                onClick = if (importing) null else ({ picker.launch(arrayOf("*/*")) }),
+                trailing = if (importing) ({ CircularProgressIndicator(color = Haven.colors.accent, modifier = Modifier.size(24.dp), strokeWidth = 2.dp) }) else null,
+            )
+        }
+        Hint(
+            if (importing) "Copying the map onto this phone. Large files can take a minute, so keep HAVEN open."
+            else "Raw OpenStreetMap files (.osm, .pbf) can't be drawn directly. Convert them to .pmtiles on a computer first (see docs/MAP_PACKS.md), then import the result.",
+        )
+
         SectionLabel("Options")
         ListGroup {
             ListRow("Wi-Fi only", subtitle = "Avoid mobile data for map downloads", trailing = {
@@ -281,6 +320,16 @@ fun DownloadsScreen(back: () -> Unit, go: (String) -> Unit) {
             GroupDivider(inset = 16.dp)
             ListRow("Map source", subtitle = url.ifBlank { "Not set" }, chevron = true, onClick = { editSource = true })
         }
+    }
+
+    importError?.let { msg ->
+        AlertDialog(
+            onDismissRequest = { importError = null },
+            containerColor = Haven.colors.surface,
+            title = { Text("Couldn't import map", style = Haven.type.headline, color = Haven.colors.text) },
+            text = { Text(msg, style = Haven.type.callout, color = Haven.colors.text) },
+            confirmButton = { TextButton(onClick = { importError = null }) { Text("OK", color = Haven.colors.accent) } },
+        )
     }
 
     if (editSource) SourceDialog(override, onDismiss = { editSource = false }) { value ->

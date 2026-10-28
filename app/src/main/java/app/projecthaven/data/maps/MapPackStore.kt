@@ -75,7 +75,7 @@ class MapPackStore(
     // ---- install / delete ----
 
     @Synchronized
-    fun install(region: RegionManifest): InstallResult {
+    fun install(region: RegionManifest, imported: Boolean = false): InstallResult {
         if (ManifestValidator.validateRegion(region) is Validation.Invalid) return InstallResult.Rejected("Invalid manifest")
         val staged = stagingVersionDir(region.id, region.version)
         for (c in region.components) {
@@ -105,6 +105,7 @@ class MapPackStore(
             license = region.license,
             components = region.components.map { InstalledComponent(it.type, it.file, it.bytes, it.sha256, it.engine, it.engineVersion) },
             installedAtEpochMs = clock(),
+            imported = imported,
         )
         val others = _installed.value.filterNot { it.regionId == region.id }
         writeIndex(InstalledIndex(packs = others + pack))
@@ -119,6 +120,9 @@ class MapPackStore(
         writeIndex(InstalledIndex(packs = _installed.value.filterNot { it.regionId == regionId }))
         File(packsDir, regionId).deleteRecursively()
     }
+
+    /** Free bytes on the volume that holds map data. */
+    fun freeSpace(): Long = root.apply { mkdirs() }.usableSpace
 
     fun installedBytes(): Long = packsDir.takeIf { it.exists() }?.walkTopDown()?.filter { it.isFile }?.sumOf { it.length() } ?: 0L
 

@@ -18,6 +18,7 @@ import app.projecthaven.data.device.TorchController
 import app.projecthaven.data.guides.GuideRepository
 import app.projecthaven.data.maps.BundledMaps
 import app.projecthaven.data.maps.CatalogRepository
+import app.projecthaven.data.maps.MapImporter
 import app.projecthaven.data.maps.MapPackStore
 import app.projecthaven.data.maps.MapRepository
 import app.projecthaven.data.maps.PlacesRepository
@@ -66,6 +67,7 @@ class AppContainer(private val app: Application) {
     val mapStore by lazy { MapPackStore(mapsRoot) }
     val catalog by lazy { CatalogRepository(File(mapsRoot, "catalog-cache.json")) }
     val maps by lazy { MapRepository(app, mapStore, catalog) }
+    val mapImporter by lazy { MapImporter(app, mapStore) }
     val bundledMaps by lazy {
         BundledMaps(
             listAssets = { runCatching { app.assets.list("maps")?.toList() }.getOrNull().orEmpty() },

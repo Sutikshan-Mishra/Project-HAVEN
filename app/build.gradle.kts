@@ -10,7 +10,7 @@ fun havenProperty(name: String): String =
 
 android {
     namespace = "app.projecthaven"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "app.projecthaven"

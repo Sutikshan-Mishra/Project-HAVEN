@@ -27,6 +27,9 @@ object Brand {
     const val APP_NAME = "Project HAVEN"
     const val TAGLINE = "India's very own emergency utility app"
     const val DEVELOPER_CREDIT = "Developed by Sutikshan Mishra"
+    const val SPECIAL_THANKS = "Special thanks to Pratik Yadav for UI direction and project support"
+    const val DEVELOPER_LINKEDIN = "https://www.linkedin.com/in/sutikshan-mishra-73a458319"
+    const val THANKS_LINKEDIN = "https://www.linkedin.com/in/pratik-yadav-b87513368"
 }
 
 /** Branded start screen. Always black, per the brand, in both themes. */

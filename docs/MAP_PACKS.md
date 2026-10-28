@@ -71,6 +71,22 @@ of downloads and temporary disk, and 8 GB of RAM for the India overview.
 Rough sizes to plan for: a 100 × 80 km urban region to zoom 14 is typically tens of megabytes; an
 India overview to zoom 7 is smaller. Measure your own output.
 
+## Importing your own map
+
+Maps → Downloads → **Import a map file** lets anyone use a map they already have, with no catalog or
+internet. Pick a `.pmtiles` file from phone storage; HAVEN copies it into app storage, checks the
+PMTiles v3 header, reads the bounding box, name and attribution from the file, and installs it like
+any downloaded region. It appears under "On this device" and can be deleted from there.
+
+- The archive must hold **vector tiles (MVT) in the OpenMapTiles layout**, which is what
+  `tools/mappack/build_pack.sh` (Planetiler) produces. Other layouts (for example Protomaps) and raster
+  tiles are rejected with an explanation instead of drawing a blank map.
+- Raw OpenStreetMap files (`.osm`, `.osm.pbf`, `.pbf`) are source data, not tiles. Convert them on a
+  computer first, e.g. `java -jar planetiler.jar --osm-path=your.osm.pbf --output=your.pmtiles`,
+  then import the `.pmtiles`.
+- Imported maps give map display only. Place search and emergency places need a catalog pack.
+- You are responsible for the licence of data you import; keep the source's attribution.
+
 ## Hosting
 
 Upload everything in `tools/mappack/out/` to a static HTTPS host, keeping the directory layout,

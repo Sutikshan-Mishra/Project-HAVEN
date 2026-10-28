@@ -1,3 +1,4 @@
+
 # SPDX-License-Identifier: GPL-3.0-or-later
 # Builds Project HAVEN, runs unit tests and uploads the debug APK.
 # The default branch is assumed to be "main"; change the two branch lists below if yours differs.
@@ -44,10 +45,13 @@ jobs:
           echo "ANDROID_HOME=$ANDROID_HOME"
           SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
           yes | "$SDKMANAGER" --licenses > /dev/null
-          "$SDKMANAGER" "platforms;android-36"
+          "$SDKMANAGER" "platforms;android-37.0"
 
       - name: Check bundled guide content
         run: python3 tools/content/build_guides.py --check
+
+      - name: Grant execute permission
+        run: chmod +x ./gradlew
 
       - name: Unit tests
         run: ./gradlew --stacktrace testDebugUnitTest

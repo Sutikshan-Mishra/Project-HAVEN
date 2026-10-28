@@ -94,6 +94,13 @@ fun SettingsScreen(back: () -> Unit, go: (String) -> Unit) {
         Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
             Text("${Brand.APP_NAME} ${BuildConfig.VERSION_NAME}", style = Haven.type.footnote, color = Haven.colors.textSecondary)
             Text(Brand.DEVELOPER_CREDIT, style = Haven.type.footnote, color = Haven.colors.textSecondary)
+            Text(
+                Brand.SPECIAL_THANKS,
+                style = Haven.type.footnote,
+                color = Haven.colors.textSecondary,
+                textAlign = TextAlign.Center,
+                modifier = Modifier.padding(horizontal = 32.dp),
+            )
         }
     }
 }
@@ -242,6 +249,7 @@ private fun PrivacyRow(title: String, text: String) {
 @Composable
 fun AboutScreen(back: () -> Unit, go: (String) -> Unit) {
     val context = LocalContext.current
+    val show = LocalShowMessage.current
     HavenScreen("About", onBack = back, largeTitle = false) {
         Column(Modifier.fillMaxWidth().padding(vertical = 16.dp), horizontalAlignment = Alignment.CenterHorizontally) {
             Image(painterResource(R.drawable.ic_haven_mark), contentDescription = null, modifier = Modifier.size(72.dp))
@@ -252,7 +260,19 @@ fun AboutScreen(back: () -> Unit, go: (String) -> Unit) {
         ListGroup {
             ListRow("Version", value = "${BuildConfig.VERSION_NAME} (${BuildConfig.VERSION_CODE})")
             GroupDivider(inset = 16.dp)
-            ListRow(Brand.DEVELOPER_CREDIT)
+            ListRow(
+                Brand.DEVELOPER_CREDIT,
+                value = "LinkedIn",
+                valueColor = Haven.colors.accent,
+                onClick = { if (!SystemActions.openUrl(context, Brand.DEVELOPER_LINKEDIN)) show("No app found to open the link") },
+            )
+            GroupDivider(inset = 16.dp)
+            ListRow(
+                Brand.SPECIAL_THANKS,
+                value = "LinkedIn",
+                valueColor = Haven.colors.accent,
+                onClick = { if (!SystemActions.openUrl(context, Brand.THANKS_LINKEDIN)) show("No app found to open the link") },
+            )
             GroupDivider(inset = 16.dp)
             ListRow("Licence", value = "GPL-3.0-or-later")
             GroupDivider(inset = 16.dp)
