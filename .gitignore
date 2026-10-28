@@ -1,0 +1,17 @@
+*.iml
+.gradle/
+.kotlin/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/app/build/
+/captures
+.externalNativeBuild/
+.cxx/
+*.keystore
+*.jks
+keystore.properties
+# Generated map packs are large; publish them as release assets, not in git.
+/tools/mappack/out/
+/tools/mappack/work/

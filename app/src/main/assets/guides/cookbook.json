@@ -1,0 +1,1228 @@
+{
+ "formatVersion": 1,
+ "updated": "2026-10-28",
+ "recipes": [
+  {
+   "id": "sattu-drink",
+   "title": "Sattu drink",
+   "category": "no_cook",
+   "summary": "Filling roasted gram flour drink. No cooking.",
+   "servings": 1,
+   "prepMinutes": 5,
+   "cookMinutes": 0,
+   "equipment": [
+    "Glass or bottle",
+    "Spoon"
+   ],
+   "waterMl": 250,
+   "fuel": "none",
+   "vegetarian": true,
+   "baseIngredients": [
+    "sattu"
+   ],
+   "ingredients": [
+    {
+     "item": "sattu (roasted gram flour)",
+     "amount": "4 tbsp"
+    },
+    {
+     "item": "clean drinking water",
+     "amount": "250 mL"
+    },
+    {
+     "item": "salt",
+     "amount": "1 pinch"
+    },
+    {
+     "item": "lemon, juiced (optional)",
+     "amount": "½"
+    },
+    {
+     "item": "roasted cumin powder (optional)",
+     "amount": "¼ tsp"
+    }
+   ],
+   "steps": [
+    "Put the sattu in a glass or bottle.",
+    "Add a little water and stir into a smooth paste.",
+    "Add the rest of the water, salt, lemon and cumin, and stir or shake well.",
+    "Drink straight away."
+   ],
+   "substitutions": [
+    "Use jaggery instead of salt for a sweet version.",
+    "Add chopped onion or green chilli if you have them."
+   ],
+   "safety": [
+    "Use only treated or packaged water for soaking, rinsing and mixing."
+   ],
+   "keywords": [
+    "sattu",
+    "drink",
+    "breakfast",
+    "bihar",
+    "summer"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "id": "nimbu-poha",
+   "title": "No-cook lemon poha",
+   "category": "no_cook",
+   "summary": "Softened flattened rice with peanuts and lemon.",
+   "servings": 2,
+   "prepMinutes": 10,
+   "cookMinutes": 0,
+   "equipment": [
+    "Bowl",
+    "Sieve or cloth"
+   ],
+   "waterMl": 300,
+   "fuel": "none",
+   "vegetarian": true,
+   "baseIngredients": [
+    "poha",
+    "peanuts"
+   ],
+   "ingredients": [
+    {
+     "item": "thick poha (flattened rice)",
+     "amount": "1 cup"
+    },
+    {
+     "item": "roasted peanuts",
+     "amount": "2 tbsp"
+    },
+    {
+     "item": "lemon, juiced",
+     "amount": "1"
+    },
+    {
+     "item": "salt",
+     "amount": "¼ tsp"
+    },
+    {
+     "item": "sugar (optional)",
+     "amount": "½ tsp"
+    },
+    {
+     "item": "onion or cucumber, chopped (optional)",
+     "amount": "1 small"
+    }
+   ],
+   "steps": [
+    "Rinse the poha briefly in clean water and drain well.",
+    "Leave it for 5 minutes to soften.",
+    "Mix in salt, sugar and lemon juice.",
+    "Top with peanuts and onion or cucumber."
+   ],
+   "substitutions": [
+    "Roasted chana or sev instead of peanuts.",
+    "Curd instead of lemon, if it is fresh."
+   ],
+   "safety": [
+    "Use only treated or packaged water for soaking, rinsing and mixing.",
+    "Eat within 2 hours, or within 1 hour in hot weather, unless you can refrigerate it."
+   ],
+   "keywords": [
+    "poha",
+    "breakfast",
+    "flattened rice"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "id": "bhel",
+   "title": "Puffed rice bhel",
+   "category": "no_cook",
+   "summary": "Crunchy puffed rice with peanuts and chana.",
+   "servings": 2,
+   "prepMinutes": 10,
+   "cookMinutes": 0,
+   "equipment": [
+    "Bowl",
+    "Knife"
+   ],
+   "waterMl": 0,
+   "fuel": "none",
+   "vegetarian": true,
+   "baseIngredients": [
+    "murmura",
+    "peanuts",
+    "chana"
+   ],
+   "ingredients": [
+    {
+     "item": "murmura (puffed rice)",
+     "amount": "2 cups"
+    },
+    {
+     "item": "roasted peanuts",
+     "amount": "¼ cup"
+    },
+    {
+     "item": "roasted chana",
+     "amount": "¼ cup"
+    },
+    {
+     "item": "onion, chopped (optional)",
+     "amount": "1 small"
+    },
+    {
+     "item": "tomato, chopped (optional)",
+     "amount": "1 small"
+    },
+    {
+     "item": "lemon, juiced",
+     "amount": "½"
+    },
+    {
+     "item": "salt and chaat masala",
+     "amount": "to taste"
+    }
+   ],
+   "steps": [
+    "Mix the puffed rice, peanuts and chana.",
+    "Add onion and tomato if using.",
+    "Season with lemon, salt and chaat masala and eat at once, before it softens."
+   ],
+   "substitutions": [
+    "Any dry namkeen or sev can replace part of the puffed rice."
+   ],
+   "safety": [
+    "Wash fresh vegetables in treated water before chopping."
+   ],
+   "keywords": [
+    "bhel",
+    "snack",
+    "murmura",
+    "chaat"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "id": "chana-chaat",
+   "title": "Canned chickpea chaat",
+   "category": "no_cook",
+   "summary": "Protein-rich salad from canned chickpeas.",
+   "servings": 2,
+   "prepMinutes": 10,
+   "cookMinutes": 0,
+   "equipment": [
+    "Can opener",
+    "Bowl"
+   ],
+   "waterMl": 200,
+   "fuel": "none",
+   "vegetarian": true,
+   "baseIngredients": [
+    "canned",
+    "chickpeas"
+   ],
+   "ingredients": [
+    {
+     "item": "chickpeas (about 400 g)",
+     "amount": "1 can"
+    },
+    {
+     "item": "onion, chopped",
+     "amount": "1 small"
+    },
+    {
+     "item": "tomato, chopped",
+     "amount": "1 small"
+    },
+    {
+     "item": "lemon, juiced",
+     "amount": "½"
+    },
+    {
+     "item": "salt and chaat masala",
+     "amount": "to taste"
+    }
+   ],
+   "steps": [
+    "Check the can is not bulging, leaking or badly dented.",
+    "Drain the chickpeas and rinse them in clean water.",
+    "Mix with onion, tomato, lemon, salt and chaat masala."
+   ],
+   "substitutions": [
+    "Canned rajma or mixed beans.",
+    "Roasted chana if you have no cans."
+   ],
+   "safety": [
+    "Discard any can that is bulging, leaking, rusted or spurts when opened.",
+    "Eat within 2 hours, or within 1 hour in hot weather, unless you can refrigerate it."
+   ],
+   "keywords": [
+    "chickpeas",
+    "chole",
+    "salad",
+    "canned"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "id": "gur-chana",
+   "title": "Gur, chana and peanuts",
+   "category": "no_cook",
+   "summary": "Portable energy snack that keeps for weeks.",
+   "servings": 4,
+   "prepMinutes": 5,
+   "cookMinutes": 0,
+   "equipment": [
+    "Container"
+   ],
+   "waterMl": 0,
+   "fuel": "none",
+   "vegetarian": true,
+   "baseIngredients": [
+    "chana",
+    "peanuts",
+    "snacks"
+   ],
+   "ingredients": [
+    {
+     "item": "roasted chana",
+     "amount": "1 cup"
+    },
+    {
+     "item": "roasted peanuts",
+     "amount": "½ cup"
+    },
+    {
+     "item": "jaggery, broken into pieces",
+     "amount": "100 g"
+    }
+   ],
+   "steps": [
+    "Mix everything in a dry, airtight container.",
+    "Eat a handful as needed."
+   ],
+   "substitutions": [
+    "Add dried fruit, makhana or seeds if available."
+   ],
+   "safety": [
+    "Keep the container dry and sealed to stop it going soft or attracting insects."
+   ],
+   "keywords": [
+    "snack",
+    "jaggery",
+    "gur",
+    "portable",
+    "trek"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "id": "bread-peanut-banana",
+   "title": "Bread or khakhra with peanut butter",
+   "category": "no_cook",
+   "summary": "Quick, portable meal from shelf staples.",
+   "servings": 1,
+   "prepMinutes": 5,
+   "cookMinutes": 0,
+   "equipment": [
+    "Knife"
+   ],
+   "waterMl": 0,
+   "fuel": "none",
+   "vegetarian": true,
+   "baseIngredients": [
+    "bread",
+    "snacks"
+   ],
+   "ingredients": [
+    {
+     "item": "bread or 2 khakhra",
+     "amount": "2 slices"
+    },
+    {
+     "item": "peanut butter",
+     "amount": "2 tbsp"
+    },
+    {
+     "item": "banana (optional)",
+     "amount": "1"
+    }
+   ],
+   "steps": [
+    "Spread peanut butter on the bread or khakhra.",
+    "Add sliced banana if you have one."
+   ],
+   "substitutions": [
+    "Jam, honey or chutney instead of peanut butter."
+   ],
+   "safety": [
+    "Check bread for mould before eating; throw away the whole loaf if any is mouldy."
+   ],
+   "keywords": [
+    "sandwich",
+    "breakfast",
+    "portable"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "id": "soaked-oats",
+   "title": "Soaked oats",
+   "category": "no_cook",
+   "summary": "Oats softened in milk or water. No heat needed.",
+   "servings": 1,
+   "prepMinutes": 20,
+   "cookMinutes": 0,
+   "equipment": [
+    "Bowl or jar"
+   ],
+   "waterMl": 200,
+   "fuel": "none",
+   "vegetarian": true,
+   "baseIngredients": [
+    "oats"
+   ],
+   "ingredients": [
+    {
+     "item": "rolled oats",
+     "amount": "½ cup"
+    },
+    {
+     "item": "UHT or packaged milk, or clean water",
+     "amount": "200 mL"
+    },
+    {
+     "item": "sugar, jaggery or honey",
+     "amount": "1 tbsp"
+    },
+    {
+     "item": "nuts or dried fruit (optional)",
+     "amount": "handful"
+    }
+   ],
+   "steps": [
+    "Mix the oats with milk or water.",
+    "Leave for 15 to 20 minutes until soft.",
+    "Sweeten and add nuts or fruit."
+   ],
+   "substitutions": [
+    "Poha can be used instead of oats, with a shorter soak."
+   ],
+   "safety": [
+    "Use sealed UHT milk, or eat at once if made with fresh milk and there is no refrigerator.",
+    "Eat within 2 hours, or within 1 hour in hot weather, unless you can refrigerate it."
+   ],
+   "keywords": [
+    "oats",
+    "breakfast",
+    "porridge"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "id": "khichdi",
+   "title": "One-pot moong dal khichdi",
+   "category": "minimal",
+   "summary": "Soft rice and lentils in one pot. Easy to digest.",
+   "servings": 3,
+   "prepMinutes": 25,
+   "cookMinutes": 20,
+   "equipment": [
+    "Pot with lid or pressure cooker",
+    "Stove"
+   ],
+   "waterMl": 1100,
+   "fuel": "medium",
+   "vegetarian": true,
+   "baseIngredients": [
+    "rice",
+    "lentils"
+   ],
+   "ingredients": [
+    {
+     "item": "rice",
+     "amount": "½ cup"
+    },
+    {
+     "item": "split moong dal",
+     "amount": "½ cup"
+    },
+    {
+     "item": "water, plus water for soaking",
+     "amount": "3 cups"
+    },
+    {
+     "item": "salt",
+     "amount": "½ tsp"
+    },
+    {
+     "item": "turmeric",
+     "amount": "¼ tsp"
+    },
+    {
+     "item": "ghee or oil (optional)",
+     "amount": "1 tsp"
+    }
+   ],
+   "steps": [
+    "Wash the rice and dal together and soak for 20 minutes. Soaking saves fuel.",
+    "Drain, then add 3 cups of water, salt and turmeric.",
+    "Pressure cook for 3 whistles, or simmer covered for 20 to 25 minutes until soft.",
+    "Stir in ghee if using."
+   ],
+   "substitutions": [
+    "Masoor dal instead of moong.",
+    "Add any vegetables you have."
+   ],
+   "safety": [
+    "Serve hot. Cool leftovers quickly and eat them the same day, reheated until steaming."
+   ],
+   "keywords": [
+    "khichdi",
+    "one pot",
+    "comfort food",
+    "sick",
+    "rice"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "id": "masoor-dal",
+   "title": "Quick masoor dal",
+   "category": "minimal",
+   "summary": "Red lentils that cook fast with no soaking.",
+   "servings": 3,
+   "prepMinutes": 5,
+   "cookMinutes": 18,
+   "equipment": [
+    "Pot with lid",
+    "Stove"
+   ],
+   "waterMl": 800,
+   "fuel": "low",
+   "vegetarian": true,
+   "baseIngredients": [
+    "lentils"
+   ],
+   "ingredients": [
+    {
+     "item": "masoor dal (red lentils)",
+     "amount": "¾ cup"
+    },
+    {
+     "item": "water",
+     "amount": "3 cups"
+    },
+    {
+     "item": "salt",
+     "amount": "½ tsp"
+    },
+    {
+     "item": "turmeric",
+     "amount": "¼ tsp"
+    },
+    {
+     "item": "oil and cumin seeds (optional)",
+     "amount": "1 tsp"
+    }
+   ],
+   "steps": [
+    "Rinse the dal.",
+    "Boil with water, salt and turmeric, then simmer covered for 15 to 18 minutes until soft.",
+    "For tadka, heat oil with cumin and pour over, if fuel allows."
+   ],
+   "substitutions": [
+    "Yellow moong dal also cooks quickly."
+   ],
+   "safety": [
+    "Keep the lid on to save fuel and water."
+   ],
+   "keywords": [
+    "dal",
+    "lentils",
+    "masoor"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "id": "absorption-rice",
+   "title": "Fuel-saving rice",
+   "category": "minimal",
+   "summary": "Rice cooked without draining, so no water is wasted.",
+   "servings": 3,
+   "prepMinutes": 20,
+   "cookMinutes": 12,
+   "equipment": [
+    "Pot with tight lid",
+    "Stove"
+   ],
+   "waterMl": 700,
+   "fuel": "low",
+   "vegetarian": true,
+   "baseIngredients": [
+    "rice"
+   ],
+   "ingredients": [
+    {
+     "item": "rice",
+     "amount": "1 cup"
+    },
+    {
+     "item": "water, plus water for soaking",
+     "amount": "2 cups"
+    },
+    {
+     "item": "salt",
+     "amount": "½ tsp"
+    }
+   ],
+   "steps": [
+    "Rinse the rice and soak it for 20 minutes, then drain.",
+    "Bring the rice and 2 cups of water to the boil.",
+    "Cover tightly, turn the heat to the lowest setting and cook for 10 minutes.",
+    "Turn off the heat and leave covered for 10 more minutes."
+   ],
+   "substitutions": [
+    "Add whole spices or a little ghee for flavour."
+   ],
+   "safety": [
+    "Cooked rice left at room temperature can cause food poisoning. Eat it hot and do not keep it for later without refrigeration."
+   ],
+   "keywords": [
+    "rice",
+    "chawal",
+    "absorption"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "id": "roti",
+   "title": "Tawa roti",
+   "category": "minimal",
+   "summary": "Simple flatbread from atta and water.",
+   "servings": 3,
+   "prepMinutes": 20,
+   "cookMinutes": 15,
+   "equipment": [
+    "Tawa or flat pan",
+    "Rolling pin or bottle",
+    "Stove"
+   ],
+   "waterMl": 200,
+   "fuel": "medium",
+   "vegetarian": true,
+   "baseIngredients": [
+    "atta"
+   ],
+   "ingredients": [
+    {
+     "item": "atta (whole wheat flour)",
+     "amount": "2 cups"
+    },
+    {
+     "item": "water",
+     "amount": "about ¾ cup"
+    },
+    {
+     "item": "salt",
+     "amount": "¼ tsp"
+    }
+   ],
+   "steps": [
+    "Mix flour and salt, then add water slowly and knead into a soft dough.",
+    "Rest the dough for 10 minutes.",
+    "Divide into balls and roll each thin.",
+    "Cook on a hot tawa about a minute per side until brown spots appear."
+   ],
+   "substitutions": [
+    "Mix in besan or millet flour if atta is short.",
+    "Pat by hand if you have no rolling pin."
+   ],
+   "safety": [
+    "Wash hands before kneading."
+   ],
+   "keywords": [
+    "roti",
+    "chapati",
+    "bread",
+    "atta"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "id": "besan-chilla",
+   "title": "Besan chilla",
+   "category": "minimal",
+   "summary": "Gram-flour pancakes, quick and filling.",
+   "servings": 2,
+   "prepMinutes": 10,
+   "cookMinutes": 10,
+   "equipment": [
+    "Tawa or pan",
+    "Bowl",
+    "Stove"
+   ],
+   "waterMl": 200,
+   "fuel": "low",
+   "vegetarian": true,
+   "baseIngredients": [
+    "besan"
+   ],
+   "ingredients": [
+    {
+     "item": "besan (gram flour)",
+     "amount": "1 cup"
+    },
+    {
+     "item": "water",
+     "amount": "about ¾ cup"
+    },
+    {
+     "item": "onion, chopped (optional)",
+     "amount": "1 small"
+    },
+    {
+     "item": "salt",
+     "amount": "¼ tsp"
+    },
+    {
+     "item": "turmeric and ajwain",
+     "amount": "pinch"
+    },
+    {
+     "item": "oil",
+     "amount": "1 tsp"
+    }
+   ],
+   "steps": [
+    "Whisk besan, water, salt and spices into a smooth batter.",
+    "Add onion if using.",
+    "Spread a ladle of batter on a hot, lightly oiled tawa.",
+    "Cook 2 minutes per side until set and golden."
+   ],
+   "substitutions": [
+    "Mix in atta or rice flour if besan is short."
+   ],
+   "safety": [
+    "Use only treated or packaged water for soaking, rinsing and mixing."
+   ],
+   "keywords": [
+    "chilla",
+    "besan",
+    "pancake",
+    "breakfast"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "id": "upma",
+   "title": "Rava upma",
+   "category": "minimal",
+   "summary": "Savoury semolina in about 10 minutes.",
+   "servings": 2,
+   "prepMinutes": 5,
+   "cookMinutes": 10,
+   "equipment": [
+    "Pan with lid",
+    "Stove"
+   ],
+   "waterMl": 500,
+   "fuel": "low",
+   "vegetarian": true,
+   "baseIngredients": [
+    "rava"
+   ],
+   "ingredients": [
+    {
+     "item": "rava (semolina)",
+     "amount": "1 cup"
+    },
+    {
+     "item": "water",
+     "amount": "2 cups"
+    },
+    {
+     "item": "oil",
+     "amount": "1 tsp"
+    },
+    {
+     "item": "mustard seeds",
+     "amount": "½ tsp"
+    },
+    {
+     "item": "onion, chopped (optional)",
+     "amount": "1 small"
+    },
+    {
+     "item": "salt",
+     "amount": "½ tsp"
+    }
+   ],
+   "steps": [
+    "Dry roast the rava for 2 to 3 minutes and set aside.",
+    "Heat oil, add mustard seeds and onion, and cook for a minute.",
+    "Add water and salt and bring to the boil.",
+    "Stir in the rava slowly, cover and cook on low for 2 to 3 minutes."
+   ],
+   "substitutions": [
+    "Poha or broken wheat (dalia), adjusting water and time."
+   ],
+   "safety": [
+    "Serve hot."
+   ],
+   "keywords": [
+    "upma",
+    "rava",
+    "semolina",
+    "breakfast"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "id": "egg-bhurji",
+   "title": "Egg bhurji",
+   "category": "minimal",
+   "summary": "Spiced scrambled eggs.",
+   "servings": 2,
+   "prepMinutes": 5,
+   "cookMinutes": 5,
+   "equipment": [
+    "Pan",
+    "Stove"
+   ],
+   "waterMl": 0,
+   "fuel": "low",
+   "vegetarian": false,
+   "baseIngredients": [
+    "eggs"
+   ],
+   "ingredients": [
+    {
+     "item": "eggs",
+     "amount": "4"
+    },
+    {
+     "item": "onion, chopped (optional)",
+     "amount": "1 small"
+    },
+    {
+     "item": "oil",
+     "amount": "1 tsp"
+    },
+    {
+     "item": "salt and chilli",
+     "amount": "to taste"
+    }
+   ],
+   "steps": [
+    "Heat oil and cook the onion for a minute.",
+    "Add beaten eggs, salt and chilli.",
+    "Stir until fully cooked with no runny parts."
+   ],
+   "substitutions": [
+    "Paneer instead of eggs for a vegetarian version."
+   ],
+   "safety": [
+    "Cook eggs until firm.",
+    "Wash hands and anything that touched raw egg."
+   ],
+   "keywords": [
+    "egg",
+    "anda",
+    "bhurji",
+    "breakfast"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "id": "canned-rajma",
+   "title": "Canned rajma",
+   "category": "minimal",
+   "summary": "Kidney-bean curry from a can in 10 minutes.",
+   "servings": 3,
+   "prepMinutes": 5,
+   "cookMinutes": 10,
+   "equipment": [
+    "Pot",
+    "Can opener",
+    "Stove"
+   ],
+   "waterMl": 150,
+   "fuel": "low",
+   "vegetarian": true,
+   "baseIngredients": [
+    "canned",
+    "beans"
+   ],
+   "ingredients": [
+    {
+     "item": "kidney beans (about 400 g)",
+     "amount": "1 can"
+    },
+    {
+     "item": "onion, chopped",
+     "amount": "1 small"
+    },
+    {
+     "item": "tomato, chopped, or 2 tbsp tomato puree",
+     "amount": "1"
+    },
+    {
+     "item": "oil",
+     "amount": "1 tsp"
+    },
+    {
+     "item": "salt and spices",
+     "amount": "to taste"
+    }
+   ],
+   "steps": [
+    "Check the can is not bulging, leaking or badly dented.",
+    "Cook onion in oil, then tomato, for a few minutes.",
+    "Add the beans with their liquid and salt and spices.",
+    "Simmer for 5 minutes until hot through."
+   ],
+   "substitutions": [
+    "Canned chickpeas or mixed beans."
+   ],
+   "safety": [
+    "Discard any can that is bulging, leaking, rusted or spurts when opened."
+   ],
+   "keywords": [
+    "rajma",
+    "beans",
+    "canned",
+    "curry"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "id": "noodles-veg",
+   "title": "Packet noodles with vegetables",
+   "category": "minimal",
+   "summary": "Instant noodles made more filling.",
+   "servings": 1,
+   "prepMinutes": 2,
+   "cookMinutes": 5,
+   "equipment": [
+    "Pot",
+    "Stove"
+   ],
+   "waterMl": 300,
+   "fuel": "low",
+   "vegetarian": true,
+   "baseIngredients": [
+    "noodles"
+   ],
+   "ingredients": [
+    {
+     "item": "instant noodles",
+     "amount": "1 packet"
+    },
+    {
+     "item": "water",
+     "amount": "300 mL"
+    },
+    {
+     "item": "chopped vegetables or a beaten egg (optional)",
+     "amount": "handful"
+    }
+   ],
+   "steps": [
+    "Boil the water.",
+    "Add the vegetables and cook for 1 minute.",
+    "Add noodles and seasoning and cook as the packet says."
+   ],
+   "substitutions": [
+    "Add leftover dal or chana for protein."
+   ],
+   "safety": [
+    "Adding egg makes it non-vegetarian; cook until set."
+   ],
+   "keywords": [
+    "noodles",
+    "maggi",
+    "quick"
+   ],
+   "updated": "2026-10-28"
+  },
+  {
+   "id": "retained-heat-dal",
+   "title": "Retained-heat dal and rice",
+   "category": "minimal",
+   "summary": "Bring to the boil, then let an insulated box finish the cooking to save fuel.",
+   "servings": 3,
+   "prepMinutes": 25,
+   "cookMinutes": 10,
+   "equipment": [
+    "Pot with tight lid",
+    "Insulated box, basket or bedding to wrap the pot",
+    "Stove"
+   ],
+   "waterMl": 1100,
+   "fuel": "low",
+   "vegetarian": true,
+   "baseIngredients": [
+    "rice",
+    "lentils"
+   ],
+   "ingredients": [
+    {
+     "item": "rice",
+     "amount": "½ cup"
+    },
+    {
+     "item": "moong or masoor dal",
+     "amount": "½ cup"
+    },
+    {
+     "item": "water, plus water for soaking",
+     "amount": "3 cups"
+    },
+    {
+     "item": "salt",
+     "amount": "½ tsp"
+    },
+    {
+     "item": "turmeric",
+     "amount": "¼ tsp"
+    }
+   ],
+   "steps": [
+    "Soak the rice and dal for 20 minutes, then drain.",
+    "Add water, salt and turmeric and bring to a full boil.",
+    "Boil hard for 5 minutes with the lid on.",
+    "Move the closed pot quickly into an insulated box, or wrap it thickly in blankets.",
+    "Leave closed for 1 to 2 hours, then check it is soft and still steaming hot."
+   ],
+   "substitutions": [
+    "Works for other grains and pulses that cook by simmering."
+   ],
+   "safety": [
+    "Food must still be steaming hot when you open it. If it is only warm, bring it back to the boil before eating.",
+    "Do not leave food in the box overnight.",
+    "Not suitable for meat in emergencies."
+   ],
+   "keywords": [
+    "haybox",
+    "thermal cooking",
+    "fireless",
+    "fuel saving",
+    "khichdi"
+   ],
+   "updated": "2026-10-28"
+  }
+ ],
+ "safety": [
+  {
+   "id": "storage",
+   "title": "Food storage",
+   "summary": "Keeping supplies safe and pest-free.",
+   "keywords": [
+    "store",
+    "pantry",
+    "pests"
+   ],
+   "sections": [
+    {
+     "id": "do",
+     "title": "Do",
+     "style": "steps",
+     "items": [
+      "Keep dry food in airtight containers off the floor, in a cool, dry place.",
+      "Store food away from fuel, pesticides and cleaning products.",
+      "Use older stock first and check dates regularly."
+     ]
+    },
+    {
+     "id": "power",
+     "title": "During power cuts",
+     "style": "bullets",
+     "items": [
+      "Keep fridge and freezer doors closed as much as possible.",
+      "Perishable food left warm for more than 2 hours should be thrown away."
+     ]
+    }
+   ],
+   "references": [
+    {
+     "title": "Consumer guidance on food safety",
+     "publisher": "Food Safety and Standards Authority of India",
+     "url": "https://www.fssai.gov.in"
+    },
+    {
+     "title": "Food Safety in a Power Outage and Flood",
+     "publisher": "US Department of Agriculture, Food Safety and Inspection Service"
+    }
+   ],
+   "updated": "2026-10-28",
+   "review": {
+    "status": "pending"
+   }
+  },
+  {
+   "id": "spoilage",
+   "title": "Spoilage warnings",
+   "summary": "When to throw food away.",
+   "keywords": [
+    "spoiled",
+    "expired",
+    "mould",
+    "can",
+    "smell"
+   ],
+   "sections": [
+    {
+     "id": "discard",
+     "title": "Throw away",
+     "style": "warning",
+     "items": [
+      "Cans that are bulging, leaking, badly dented, rusted or spurt when opened.",
+      "Food with mould, slime, a sour or unusual smell, or an odd colour.",
+      "Food that has touched flood water, unless it is in an undamaged sealed can that you clean first.",
+      "Cooked food left at room temperature for more than 2 hours, or 1 hour in hot weather."
+     ]
+    },
+    {
+     "id": "rule",
+     "title": "Rule",
+     "style": "bullets",
+     "items": [
+      "When in doubt, throw it out. Tasting is not a safe test."
+     ]
+    }
+   ],
+   "references": [
+    {
+     "title": "Food Safety in a Power Outage and Flood",
+     "publisher": "US Department of Agriculture, Food Safety and Inspection Service"
+    },
+    {
+     "title": "Five Keys to Safer Food Manual",
+     "publisher": "World Health Organization"
+    }
+   ],
+   "updated": "2026-10-28",
+   "review": {
+    "status": "pending"
+   }
+  },
+  {
+   "id": "safe-preparation",
+   "title": "Safe food preparation",
+   "summary": "Five keys to safer food.",
+   "keywords": [
+    "hygiene",
+    "clean",
+    "cook",
+    "wash hands"
+   ],
+   "sections": [
+    {
+     "id": "keys",
+     "title": "Five keys",
+     "style": "steps",
+     "items": [
+      "Keep clean: wash hands with soap before handling food and after using the toilet.",
+      "Separate raw and cooked food.",
+      "Cook thoroughly, especially meat, eggs and seafood.",
+      "Keep food at safe temperatures: eat hot food hot and do not leave cooked food out.",
+      "Use safe water and fresh, undamaged ingredients."
+     ]
+    }
+   ],
+   "references": [
+    {
+     "title": "Five Keys to Safer Food Manual",
+     "publisher": "World Health Organization"
+    }
+   ],
+   "updated": "2026-10-28",
+   "review": {
+    "status": "pending"
+   }
+  },
+  {
+   "id": "cross-contamination",
+   "title": "Avoiding cross-contamination",
+   "summary": "Stopping germs spreading between foods.",
+   "keywords": [
+    "cross contamination",
+    "raw",
+    "chopping board",
+    "utensils"
+   ],
+   "sections": [
+    {
+     "id": "do",
+     "title": "Do",
+     "style": "steps",
+     "items": [
+      "Use separate boards and knives for raw meat or eggs and for ready-to-eat food, or wash them well in between.",
+      "Wash hands after handling raw meat, eggs or unwashed vegetables.",
+      "Cover food to keep flies and pests off."
+     ]
+    },
+    {
+     "id": "avoid",
+     "title": "Do not",
+     "style": "avoid",
+     "items": [
+      "Put cooked food back on a plate that held raw food."
+     ]
+    }
+   ],
+   "references": [
+    {
+     "title": "Five Keys to Safer Food Manual",
+     "publisher": "World Health Organization"
+    }
+   ],
+   "updated": "2026-10-28",
+   "review": {
+    "status": "pending"
+   }
+  },
+  {
+   "id": "drinking-water",
+   "title": "Drinking-water safety",
+   "summary": "Safe water for drinking and cooking.",
+   "keywords": [
+    "water",
+    "boil",
+    "drinking water"
+   ],
+   "sections": [
+    {
+     "id": "steps",
+     "title": "Steps",
+     "style": "steps",
+     "items": [
+      "Use sealed bottled water or water you have treated.",
+      "Boil water at a rolling boil for 1 minute, or use purification tablets as the packet says.",
+      "Store treated water covered and pour it out rather than dipping in."
+     ]
+    },
+    {
+     "id": "more",
+     "title": "More",
+     "style": "bullets",
+     "items": [
+      "See Survival Handbook › Filtration versus disinfection for full details."
+     ]
+    }
+   ],
+   "references": [
+    {
+     "title": "Making Water Safe in an Emergency",
+     "publisher": "US Centers for Disease Control and Prevention"
+    },
+    {
+     "title": "Guidelines for Drinking-water Quality",
+     "publisher": "World Health Organization"
+    }
+   ],
+   "updated": "2026-10-28",
+   "review": {
+    "status": "pending"
+   }
+  }
+ ]
+}

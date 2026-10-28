@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="haven_black">#FF000000</color>
+    <color name="haven_blue">#FF0A84FF</color>
+    <color name="haven_white">#FFFFFFFF</color>
+</resources>

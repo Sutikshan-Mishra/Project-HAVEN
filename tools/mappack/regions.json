@@ -1,0 +1,25 @@
+{
+  "_comment": "Region definitions for the map-pack pipeline. bbox is [west, south, east, north]. geofabrik is the Planetiler --area name of the OSM extract to read.",
+  "regions": [
+    {
+      "id": "in-overview",
+      "name": "India overview",
+      "description": "Major roads, rivers and cities for all of India. Not detailed enough for street navigation.",
+      "geofabrik": "india",
+      "bbox": [68.0, 6.5, 97.5, 37.5],
+      "maxzoom": 7,
+      "places": true,
+      "poi": false
+    },
+    {
+      "id": "in-up-lko-unnao-knp",
+      "name": "Lucknow · Unnao · Kanpur",
+      "description": "Street-level map of Lucknow, Unnao, Kanpur and the roads between them.",
+      "geofabrik": "northern-zone",
+      "bbox": [80.15, 26.30, 81.15, 27.05],
+      "maxzoom": 14,
+      "places": true,
+      "poi": true
+    }
+  ]
+}
