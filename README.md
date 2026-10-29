@@ -243,7 +243,7 @@ Offline-first does not mean every action works without a network, nor does it gu
 - **GPS:** Needs a usable satellite signal and a view of the sky. The first location fix can take longer without mobile data.
 - **Safety check-in:** Android battery optimisation can delay alerts. Precise timing requires the optional **Alarms and reminders** permission where supported.
 - **Ruler and calipers:** Measurements are approximate until calibrated against a known object.
-- **Medical guidance:** The bundled first-aid guides have **not yet been clinically reviewed**. Articles identify this status and include sources. See [`docs/CONTENT_REVIEW.md`](docs/CONTENT_REVIEW.md).
+- **Medical guidance:** The bundled first-aid guides are based on publicly available medical knowledge, have NOT been reviewed by a medical professional and do NOT aim to replace medical help.
 - **Maps:** Offline maps work only when suitable packs have been generated, downloaded, and installed. Turn-by-turn offline routing is not available in V1.
 
 Do not rely on HAVEN as your only source of emergency assistance, medical advice, or navigation.
@@ -276,7 +276,7 @@ docs/                         Toolchain, maps, routing, and content-review docum
 - Offline turn-by-turn routing, camera-based Morse decoding, Bluetooth peer messaging, and on-device question answering are planned for a future version; they are not V1 features.
 - Map packs and label glyphs must be generated and hosted before those maps are available to users.
 - The app's bundled content is currently English-only.
-- Check the repository's latest GitHub Actions runs and [`docs/IMPLEMENTATION_REPORT.md`](docs/IMPLEMENTATION_REPORT.md) for build and implementation status.
+- Check the repository's latest GitHub Actions runs for build and implementation status.
 
 ---
 
