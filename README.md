@@ -1,6 +1,5 @@
 
 # Project HAVEN
-
 > **Current release:** v1.0.0 · Initial public release
 > 
 <p align="center">
