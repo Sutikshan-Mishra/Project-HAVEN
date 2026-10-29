@@ -1,6 +1,8 @@
 
 # Project HAVEN
 
+> **Current release:** v1.0.0 · Initial public release
+> 
 <p align="center">
   <strong>India's emergency utility toolkit</strong><br>
   <em>Essential tools for when you need them most.</em>
